@@ -1,0 +1,7 @@
+-> Created Database Server
+-> Seed Data File
+-> Seed.ts configuration
+-> Schema defined in Schema.prisma
+-> server command added ["seed": "ts-node prisma/seed.ts"]
+-> set up env: [DATABASE_URL="postgresql://postgres:root@localhost:5432/inventorymanagement?schema=public"]
+-> run command [npx prisma migrate dev --name init -> npm run seed]

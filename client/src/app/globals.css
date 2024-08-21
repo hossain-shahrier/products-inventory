@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-gray-500;
+  @apply text-gray-900;
+}
+
+/* Custom Scrollbar Styles with Rounded Thumb */
+*::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust the scrollbar width */
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Track color */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Thumb color */
+  border-radius: 10px;
+  /* Rounded corners for the thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Thumb color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  /* Firefox-specific scrollbar width */
+  scrollbar-color: #888 #f1f1f1;
+  /* Thumb color and track color */
+}
+
+@media (min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh);
+  }
+}
