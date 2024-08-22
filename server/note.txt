@@ -5,3 +5,4 @@
 -> server command added ["seed": "ts-node prisma/seed.ts"]
 -> set up env: [DATABASE_URL="postgresql://postgres:root@localhost:5432/inventorymanagement?schema=public"]
 -> run command [npx prisma migrate dev --name init -> npm run seed]
+DATABASE_URL="postgresql//postgres:sajama874@rds-inventory-management.cbweuymiedib.ap-south-1.rds.amazonaws.com:5432/rdsInventoryManagementInitial?schema=public"
